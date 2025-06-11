@@ -1,0 +1,7 @@
+<design:component>
+	<design:attribute name="title" label="Title" description="Title for the page element" />
+	<design:attribute name="url" required="true" label="Source URL" description="The source of the content you would like to display" />
+	<design:attribute name="hide" required="false" label="Hide by Default" description="Make the content box closed when the page loads"/>
+	<design:attribute name="height" required="false" label="Height in Pixels" description="Manually set height of box" />
+	<design:attribute name="raw" required="false" label="Raw Content" description="The iframe link to the visualization"/>
+</design:component>
