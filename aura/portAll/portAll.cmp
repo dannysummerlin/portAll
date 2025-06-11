@@ -2,19 +2,12 @@
 	<aura:attribute name="title" type="String" />
 	<aura:attribute name="url" type="String" />
 	<aura:attribute name="hide" type="Boolean" default="false" />
-	<aura:attribute name="raw" type="Boolean" default="false" />
-	<aura:attribute name="height" type="Number" />
+	<aura:attribute name="iframe" type="Boolean" default="true" />
+	<aura:attribute name="height" type="Integer" />
 	<aura:attribute name="rawContent" type="String" />
 	<aura:handler name="init" value="{!this}" action="{!c.init}"/>
 
-	<lightning:accordion activeSectionName="{! v.hide ? 'na' : 'content' }">
-		<lightning:accordionSection name="content" label="{!v.title}">
-			<aura:renderIf isTrue="{! v.raw }">
-				<aura:unescapedHtml value="{! v.rawContent }" />
-			    <aura:set attribute="else">
-					<iframe src="{! v.finalUrl }" width="100%" frameborder="0" height="{! v.height }"></iframe>
-				</aura:set>
-			</aura:renderIf>
-		</lightning:accordionSection>
-	</lightning:accordion>
+    <lightning:card>
+        <aura:unescapedHTML value="{! v.rawContent }" />
+    </lightning:card>
 </aura:component>
