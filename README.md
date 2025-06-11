@@ -1,4 +1,5 @@
-<h1>![Bright light](porthole.webp) portAll</h1>
+# <img src="https://raw.githubusercontent.com/dannysummerlin/portAll/refs/heads/main/porthole.webp" width="64"/> portAll
+
 ## Content Portal for Salesforce Lightning
 
 [<img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">](https://githubsfdeploy.herokuapp.com/?owner=dannysummerlin&repo=portAll&ref=main)
